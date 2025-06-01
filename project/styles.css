@@ -1,11 +1,10 @@
-/* General reset for margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,7 +12,6 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
 header {
     background-color: #6dc0f0;
     color: white;
@@ -25,7 +23,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -41,7 +38,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Section Styling */
 section {
     padding: 20px;
     margin: 20px;
@@ -66,7 +62,6 @@ section {
     
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
