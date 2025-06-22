@@ -17,6 +17,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 header h1 {
@@ -43,7 +44,9 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 8px;
-
+    .greet {
+        padding: 15px;
+    }
     .todo-list {
         list-style: none;
         padding: 0;
@@ -67,6 +70,7 @@ footer {
     padding: 10px;
     background-color:  #6dc0f0;
     color: white;
+    margin: 0 5px 5px;
 }
 @media (max-width: 768px) {
     nav ul {

@@ -5,6 +5,13 @@ padding-right: 10px;
 margin-left: 50px;
 
 }
+.section1 {
+    display: flex;
+    justify-content: space-between;
+}
+.left-content {
+    padding: 50px;
+}
 .detail{
     color:red;
     text-align: center;
