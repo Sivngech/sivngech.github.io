@@ -1,69 +1,52 @@
-<!DOCTYPE html>
-<html>
+<body>
+  <div id="header"></div>
 
-<head>
-    <title>Sivngech Portfolio website </title>
-    <meta name="decription" content="Discover the creative journey of Sivngech, a passionate web developer and designer from Cambodia. This portfolio showcases my latest projects, technical skills, and personal achievements in front-end development, UX/UI design, and digital creativity. Whether you're a recruiter, client, or collaborator, find out how I turn ideas into interactive, user-friendly websites.">
-    <meta name="keywords" content="Porfolio static website, using HTML, CSS, and javascript">
-    
-</head>
-<link rel="stylesheet" href="f.css">
-<b>
-    <nav style="background-color: skyblue;">
-        <ul class="about-me">
-            <li><a class="active" href="about-me.html">about me</a></li>
-            <li><a class="porfolio" href="project/portfolio.html">portfolio</a></li>
-            <li><a class="more" href="#">more</a></li>
-            <li>
-                <div class="user-icon">
-                    <img style="width:20px"
-                        src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="">
-                </div>
-            </li>
-        </ul>
+  <main>
+    <section>
+      <div class="fs-3 text-start mx-auto p-4" style="max-width: 70%; width: 100%; height: auto;">
+        <span style="color: #595759;">Hi, I'm</span>
+        <span style="color: #DB918D;">Sivngech</span>
+        <br />
+        <span style="color: #595759;">
+          A passionate Web Developer based in Cambodia. I love turning ideas into real websites. Focused on clean code,
+          smooth UX, and creative design.
+        </span>
+      </div>
+    </section>
+    <section class="p-2">
+      <h1 style="color: #DB918D;">Project</h1>
+      <h3>cosmetic website</h3>
+      <div class="d-flex flex-md-row gap-4 mx-auto ml-20 mr-20">
+        <img class="" src="image/cosmitec-2.png" alt="cosmetic image"
+          style="max-width:47% ; height: 60%;object-fit: cover;">
+        <img src="image/footer-2.png" alt="cosmetic image" style="max-width:47% ; height:30%;object-fit: cover;">
+      </div>
+      <div class="p-2 fs-5" style="color: #595759;">You can check more about my project and you will know technology
+        that I used to build in project click "Explore More"</div>
+      <div class="d-flex justify-content-center">
+        <button type="button" style="background-color: #DB918D;" class="btn rounded ">Explore more</button>
+      </div>
+    </section>
+    <section>
+      <div class="p-4 text-start" style="max-width: 90%; width: 100%; height: auto;">
+        <div class="fs-3" style="color: #DB918D;">Skill</div>
+        <div class="fs-5">html, css, bootstrap, and javascript</div>
+        <div class="fs-3" style="color: #DB918D;">My hobbie</div>
+        <div class="fs-5">reading book, research about web, and listening to music</div>
 
+      </div>
+    </section>
+  </main>
 
+  <div id="footer"></div>
 
-    </nav>
-    <h1 style="color:aquamarine;">Do you know me?</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiIuimp_NjTKxjVwmAObJvFZ0qOLnjay1MQ&s" alt="image">
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data)
 
-
-    <div>
-
-        <span>Technology that I like: </span>
-        <ul>
-            <li>
-                AI
-            </li>
-            <li>Programming language(lie)</li>
-            <li>Software</li>
-        </ul>
-    </div>
-    <div>
-        <span>Reality:</span>
-        <ol>
-            <li>Sleeping</li>
-            <li>Music</li>
-            <li>Movie</li>
-        </ol>
-    </div>
-    <h1>That's just for fun guys.</h1>
-    <h3>Me now:</h3>
-    <table border="1" width:"80">
-        <tr>
-            <th>Major </th>
-            <th>Year</th>
-            <th>University</th>
-        </tr>
-        <tr>
-            <td>Computer Science</td>
-            <td>2</td>
-            <td>Rupp</td>
-        </tr>
-    </table>
-    <p style="color: aquamarine;">If you all want to know about me more, you can click about me at the navbar menu.</p>
-
-</b>
-
-</html>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data)
+  </script>
+</body>

@@ -1,145 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>about me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<link rel="stylesheet" href="f.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-<style>
-    span {
-        background-color: palegreen;
-    }
-</style>
 
-<body class="container">
+<body>
 
-    <section>
-        <div class="section1">
-            <div class="left-content">
-                <h1>It's nice to meet you!</h1>
-                <p>I am a sopomore IT student at Royal University of Phnom Penh.</p>
-                <p>I graduated from hight school in 2023. I am eager to web development.</p>
-            </div>
-            <div class="right-img">
-                <img width="200"
-                    src="https://static.vecteezy.com/system/resources/previews/020/389/525/non_2x/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg"
-                    alt="">
-            </div>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div class="text-start p-4">
+        <h2 class="fs-3">About Me</h2>
+        <h3 style="color: #5c5b5b;">Learn more about who I am, what I do, and how I can help.</h3>
+      </div>
+      <section>
+        <div class="fs-4 text-start mx-auto p-4" style="max-width: 70%; width: 100%; height: auto;">
+          <span>Hello, again my name is</span>
+          <span style="color: #DB918D;">Sivngech Khim</span> <br>
+          <span>I am a sopomore</span>
+          <span style="color: #DB918D;">Computer Science</span>
+          <span>at Royal University of Phnom Penh. Currently, I passonate about develop friendly website and web
+            design.I used to create some project such as portfolio website, cusmitec web, and food web. However, the
+            project that I build it doesn't friendly yet. I still improve it cause I am learning bootstrap, javascript,
+            and many more.</span>
         </div>
-    </section>
+      </section>
+      <section>
+        <h4 class="text-center">This is what I learned and used:</h4>
+        <div class="p-4 d-flex flex-md-row mx-auto justify-content-center">
 
-    <h1 class="text-primary">Welcome to my profile!!</h1>
-
-
-    <div style="margin:10px;">
-        <div>
-            <span>Hello, my name is Khim Sivngech. I live in Kandal province.</span>
+          <ul>
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS
+            </li>
+            <li>
+              javascript
+            </li>
+            <img class="w-25" src="https://i.pinimg.com/736x/31/e5/e7/31e5e78bb87da10be3355772e7e6d4df.jpg"
+              alt="image tool">
+          </ul>
+          <ul class="d-flex flex-md-column gap-4">
+            <div>Design tool: </div>
+            <li class="d-flex flex-md-row gap-4">
+              <div>Photoshop</div>
+              <img class="img-fluid rounded" style="width: 40px; height: 40px;"
+                src="https://i.pinimg.com/736x/ee/ea/c5/eeeac546cb55a9d9090299a8217c089e.jpg" alt="Photoshop">
+            </li>
+            <li class="d-flex flex-md-row gap-4">
+              <div>Framer</div>
+              <img class="img-fluid rounded border " style="width: 40px; height: 40px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ83FETer3YN-yY76XgPoEaaf2PARxIClBfRw&s"
+                alt="Framer">
+            </li>
+            <li class="d-flex flex-md-row gap-4">
+              <div>Bootstrap</div>
+              <img class="img-fluid rounded border " style="width: 40px; height: 40px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDeFWiJwV70GxgegCr1OR-cnD1ZsrrH4-vg&s"
+                alt="bootstrap">
+            </li>
+            <li class="d-flex flex-md-row gap-4">
+              <div>Tailwind</div>
+              <img   class="img-fluid rounded " style="width: 40px; height: 40px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" alt="Tailwind">
+            </li>
+          </ul>
         </div>
-        <h1 class="detail">Details</h1>
-        <div class="p-detail">
-
-            <p>I am a year 2 student at Royal Universiity of Phnom Penh.</p>
-            <p>My major is computer science.</p>
+      </section>
+      <section class="p-4" >
+        <div class="fs-3" style="color: #DB918D;">Project</div>
+        <div class="d-flex flex-md-row gap-4">
+          <img src="image/p-food-1.png" alt="food project" style="max-width:47% ; height: 60%;object-fit: cover;">
+          <img src="image/footer.png" alt="food project" style="max-width:47% ; height: 60%;object-fit: cover;">
         </div>
+        <div class="text-center fs-5 p-2">food project: I used any tool such as html, css,javascript,and Tailwind.</div>
+      </section>
+      <div class="d-flex justify-content-center mb-2">
+        <button type="button" style="background-color: #DB918D;" class="btn rounded px-2">Explore more</button>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data)
 
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data)
+    </script>
+  </body>
 
-        <h1>Greeting word that I used.</h1>
-    </div>
-
-
-
-    <ol>
-        <li>hello</li>
-        <li>hi</li>
-        <button onclick="alert('Welcome')">click here</button>
-    </ol>
-
-
-
-
-
-    <h1  class="text-center">My Schedule</h1>
-
-    <table border="1" width="100" style="background-color:lightblue;align-items:center;">
-        <tr>
-            <th>Time</th>
-            <th>Monday</th>
-            <td>Tuesday</td>
-            <td>Wednesday</td>
-            <td>Thusday</td>
-            <td>Friday</td>
-            <td>Saturday</td>
-            <td>Sunday</td>
-
-
-        </tr>
-        <tr>
-            <td>6:00am</td>
-            <td>wake up</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-
-        </tr>
-        <tr>
-            <td>7:00am</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>8:00am</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>9:00am</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10:00am</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>11:00am</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-
-
-    </table>
 </body>
 
 </html>
-
