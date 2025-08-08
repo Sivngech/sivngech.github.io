@@ -1,0 +1,45 @@
+  main {
+      padding-top: 80px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+ #footer {
+      margin: 0;
+      padding: 0;
+    }
+ .custom-shadow {
+      box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Make card columns flex */
+    .equal-height-col {
+      display: flex;
+      justify-content: center;
+    }
+
+    .equal-height-card {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      width: 100%;
+    }
+
+    .equal-height-card .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .view-button {
+      align-self: center;
+      margin-top: 1rem;
+      padding: 6px 20px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
