@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />">
   <title>Portfolio - Sivngech</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/index.css">
 </head>
+<style>
+  .custom-hover:hover {
+    background-color: #6c757d;
+    /* Bootstrap's 'gray' (secondary) color */
+    color: #fff;
+    /* white text */
+  }
+</style>
+
 <body>
   <div id="header"></div>
   <main>
     <div>
       <section>
-      <div class="container px-2">
-        <div class="row align-items-center">
-          <div class="col-lg-8 col-12 mb-4 mb-lg-0">
-            <div class="fs-4 text-start" style="color: #595759;">
-              <p class="mb-1">Hi, I'm</p>
-              <h2 class="fw-bold" style="color: #63BDEB;">Sivngech</h2>
-              <p>
-                A passionate Web Developer based in Cambodia. I love turning ideas into real websites.
-                Focused on clean code, smooth UX, and creative design.
-              </p>
+        <div class="container px-2">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-12 mb-4 mb-lg-0">
+              <div class="fs-4 text-start" style="color: #595759;">
+                <p class="mb-1">Hi, I'm</p>
+                <h2 class="fw-bold" style="color: #63BDEB;">Sivngech</h2>
+                <p>
+                  A passionate Web Developer based in Cambodia. I love turning ideas into real websites.
+                  Focused on clean code, smooth UX, and creative design.
+                </p>
+              </div>
+              <a href="about-me.html" class="btn btn-outline-primary mt-3">
+                Click me
+              </a>
+            </div>
+            <div class="col-lg-4 col-12 text-center">
+              <img src="image/photo_me4.jpg" alt="my photo" class="rounded-circle border border-4"
+                style="border-color: #63BDEB !important;" width="200" height="200" />
             </div>
           </div>
-          <div class="col-lg-4 col-12 text-center">
-            <img
-              src="image/photo_me4.jpg"
-              alt="my photo"
-              class="rounded-circle border border-4"
-              style="border-color: #63BDEB !important;"
-              width="200"
-              height="200"
-            />
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="px-2 py-4">
-      <h1 class="text-center" style="color: #63BDEB;">My Project</h1>
-      <div>
-        <div id="card-container" class="row g-4"></div>
-      </div>
-    </section>
-  <div>
-    Previous my skill
-  </div>
-  <div>
-    
-  </div>
-    </div>
-    
+      </section>
+      <section class="px-2 py-4">
+        <h1 class="text-center" style="color: #63BDEB;">My Project</h1>
+        <div>
+          <div id="card-container" class="row g-4"></div>
+        </div>
+      </section>
   </main>
   <div id="footer"></div>
   <script>
@@ -62,7 +61,7 @@
       col.className = 'col-md-6 col-lg-4 equal-height-col';
 
       const cardHTML = `
-        <div class="card custom-shadow equal-height-card">
+        <div class="card custom-card custom-shadow equal-height-card">
           <div class="card-body text-center">
             <h5 class="card-title">${title}</h5>
             <img
@@ -74,7 +73,7 @@
             <p class="card-text">${description}</p>
             <a
               href="${link}"
-              class="btn border border-primary bg-white text-primary view-button"
+              class="view-button btn btn-outline-primary mt-3"
             >
               View Project
             </a>
@@ -115,8 +114,7 @@
       container.appendChild(card);
     });
   </script>
-
-  <!-- ✅ Load shared header/footer JS at the end -->
   <script src="components.js"></script>
 </body>
+
 </html>

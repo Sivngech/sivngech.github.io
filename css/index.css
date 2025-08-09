@@ -1,45 +1,62 @@
-  main {
-      padding-top: 80px;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-    }
- #footer {
-      margin: 0;
-      padding: 0;
-    }
- .custom-shadow {
-      box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1);
-    }
+main {
+  padding-top: 80px;
+}
 
-    /* Make card columns flex */
-    .equal-height-col {
-      display: flex;
-      justify-content: center;
-    }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-    .equal-height-card {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      max-width: 350px;
-      width: 100%;
-    }
+#footer {
+  margin: 0;
+  padding: 0;
+}
 
-    .equal-height-card .card-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1rem;
-    }
+.custom-shadow {
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1);
+}
 
-    .view-button {
-      align-self: center;
-      margin-top: 1rem;
-      padding: 6px 20px;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
+/* Make card columns flex */
+.equal-height-col {
+  display: flex;
+  justify-content: center;
+}
+
+.equal-height-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+}
+
+.equal-height-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.view-button {
+  align-self: center;
+  margin-top: 1rem;
+  padding: 6px 20px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/*make the card in home page effective*/
+.custom-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
